@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none"/>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+
+     function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+              }
+              else{
+                menu.style.visibility="hidden";
+              }
+              
+       }
+     </script>
+     <title>Grrr - Index</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper"> 
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+           <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+              
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

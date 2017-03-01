@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+     function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+     </script>
+     <title>Grrr - Administración de Causas</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper">
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+             <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+              <p id="text-title">Planes</p>
+              <div id="cont1-planes1">
+                  <p>ID</p>
+                  <div class="border-input">
+                      <input type="text" name="id-planes" id="id-planes">
+                  </div>
+                  <div class="clear"></div>
+                  <p>Descripción</p>
+                  <div class="border-input" id="cont-descripcion-planes">
+                      <input type="text" name="descripcion-planes" id="descripcion-planes">
+                  </div>
+                  <p>Tipo de plan</p>
+                  <select id="buscarpor-planes" name="buscarpor-planes" class="droplist-campo">
+                     <option value="" disabled selected>Seleccione un campo</option>
+                     <option>Opcion 1</option>
+                     <option>Opción 2</option>
+                     <option>Opción 3</option>
+                  </select>
+                  <div class="clear"></div>
+                  <div id="cont-imagen">
+                      <p>Imagen</p>
+                      <div>
+                          <img src="../img/cuadro-gris.png">
+                          <img src="../img/sombra-imagen.png">
+                      </div>
+                      <div>
+                          <input type="checkbox" name="activo-planes" class="bloq-list" id="activo-planes" value="">
+                          <label for="activo-planes"></label>
+                          <p>Activo</p>
+                          <div class="clear"></div>
+                          <input type="checkbox" name="auto-planes" class="bloq-list" id="auto-planes" value="">
+                          <label for="auto-planes"></label>
+                          <p>Auto Renovable</p>
+                      </div>
+                  </div>
+              </div>
+              <div id="cont2-planes2">
+                  <p>Precio</p>
+                  <div class="border-input">
+                      <input type="text" name="precio-planes" id="precio-planes">
+                  </div>
+                  <p>Lapso</p>
+                  <select id="lapso-planes" name="lapso-planes" class="droplist-campo">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                  </select>
+                  <p>Semanas</p>
+                  <input type="button" class="btn-guardar" id="btn-planes">
+              </div>
+               <div class="red-line">
+                  <div class="red"></div>
+                  <img src="../img/linea-separador.jpg">
+              </div>
+              <div class="list-search">
+                  <p class="gray-text">Buscar por</p>
+                  <select class="droplist-campo">
+                         <option value="" disabled selected>Seleccione un campo</option>
+                         <option>Opcion 1</option>
+                         <option>Opción 2</option>
+                         <option>Opción 3</option>
+                 </select>
+                 <input type="search" class="search">
+              </div>
+              <div class="list" id="planes-list">
+                  <div class="list-head">
+                      <div class="item-list-head id-list4">
+                          <p>ID</p>
+                      </div>
+                      <div class="item-list-head descripcion-list">
+                          <p>Descripción</p>
+                      </div>
+                      <div class="item-list-head plan-list">
+                          <p>Plan</p>
+                      </div>
+                      <div class="item-list-head precio-list">
+                          <p>Precio</p>
+                      </div>
+                      <div class="item-list-head lapso-list">
+                          <p>Lapso</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>1</p>
+                      </div>
+                      <div class="list-items-item nombre-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item local-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item orden-list">
+                          <p>1</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>2</p>
+                      </div>
+                      <div class="list-items-item nombre-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item local-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item orden-list">
+                          <p>2</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>3</p>
+                      </div>
+                      <div class="list-items-item nombre-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item local-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item orden-list">
+                          <p>3</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>4</p>
+                      </div>
+                      <div class="list-items-item nombre-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item local-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item orden-list">
+                          <p>4</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>5</p>
+                      </div>
+                      <div class="list-items-item nombre-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item local-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item orden-list">
+                          <p>5</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

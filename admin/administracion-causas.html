@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+     function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+     </script>
+     <title>Grrr - Administración de Causas</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper"> 
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+             <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+              <p id="text-title">Administración de Causas</p>
+              <div id="cont1-causa1">
+                  <p>ID</p>
+                  <div class="border-input">
+                      <input type="text" name="id-causa1" id="id-causa1">
+                  </div>
+                  <input type="button" class="btn-guardar" id="btn-guardar1">
+                  <p>Causa</p>
+                  <div class="border-input">
+                      <input type="text" name="causa" id="causa">
+                  </div>
+                  <div class="clear"></div>
+                  <p>Bloqueado</p>
+                  <input type="checkbox" name="bloqueado" id="bloq" value="">
+                  <label for="bloq"></label>
+                  <textarea id="text1-causa1" class="textarea-causa"></textarea>
+                  <img src="../img/sombra-textarea.png" class="sombra-textarea">
+              </div>
+              <div id="cont2-causa1">
+                  <p>Veces usado</p>
+                  <div class="border-input">
+                      <input type="text" name="veces-usado" id="veces-usado">
+                  </div>
+                  <p>Likes</p>
+                  <div class="border-input">
+                      <input type="text" name="likes" id="likes">
+                  </div>
+                  <p>Shares</p>
+                  <div class="border-input">
+                      <input type="text" name="shares" id="shares">
+                  </div>
+                  <textarea id="text2-causa1" class="textarea-causa"></textarea>
+                  <img src="../img/sombra-textarea2.png" class="sombra-textarea2">
+              </div>
+              <div class="clear"></div>
+              <input type="button" id="btn-cancelar">
+              <div class="clear"></div>
+              <div class="red-line">
+                  <div class="red"></div>
+                  <img src="../img/linea-separador.jpg">
+              </div>
+              <div class="list-search">
+                  <p class="gray-text">Buscar por</p>
+                  <select class="droplist-campo">
+                         <option value="" disabled selected>Seleccione un campo</option>
+                         <option>Opcion 1</option>
+                         <option>Opción 2</option>
+                         <option>Opción 3</option>
+                 </select>
+                 <input type="search" class="search">
+              </div>
+              <div class="list" id="admin-list">
+                  <div class="list-head">
+                      <div class="item-list-head usuario-list">
+                          <p>Usuario</p>
+                      </div>
+                      <div class="item-list-head causa-list">
+                          <p>Causa</p>
+                      </div>
+                      <div class="item-list-head bloqueado-list">
+                          <p>Bloqueado</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>1</p>
+                      </div>
+                      <div class="list-items-item causa-list">
+                          <p>Causa 1</p>
+                      </div>
+                      <div class="list-items-item bloqueado-list">
+                          <input type="checkbox" name="bloqueado-list" class="bloq-list" id="bloq-list1" value="">
+                          <label for="bloq-list1"></label>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>2</p>
+                      </div>
+                      <div class="list-items-item causa-list">
+                          <p>Causa 2</p>
+                      </div>
+                      <div class="list-items-item bloqueado-list">
+                          <input type="checkbox" name="bloqueado-list" class="bloq-list" id="bloq-list2" value="">
+                          <label for="bloq-list2"></label>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>3</p>
+                      </div>
+                      <div class="list-items-item causa-list">
+                          <p>Causa 3</p>
+                      </div>
+                      <div class="list-items-item bloqueado-list">
+                          <input type="checkbox" name="bloqueado-list" class="bloq-list" id="bloq-list3" value="">
+                          <label for="bloq-list3"></label>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

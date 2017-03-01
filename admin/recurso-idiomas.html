@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+     function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+     </script>
+     <title>Grrr - Administración de Causas</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper">
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+             <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+             <p id="text-title">Recurso de Idiomas</p>
+              <div id="cont1-recur-idiomas">
+                  <div>
+                      <p class="gray-text">ID</p>
+                      <div class="border-input">
+                          <input type="text" id="id-recur-idiomas" name="id-recur-idiomas">
+                      </div>
+                  </div>
+                  <div>
+                      <p class="gray-text">Formulario</p>
+                      <select id="formulario-idiomas" name="formulario-idiomas" class="droplist-campo">
+                             <option value="" disabled selected>Seleccione un campo</option>
+                             <option>Opcion 1</option>
+                             <option>Opción 2</option>
+                             <option>Opción 3</option>
+                     </select>
+                  </div>
+                  <div>
+                      <p class="gray-text">Valor de recurso</p>
+                      <div class="border-input">
+                          <input type="text">
+                      </div>
+                  </div>
+              </div>
+              <div id="cont2-recur-idiomas">
+                  <div>
+                      <p class="gray-text">Idioma</p>
+                      <select id="idioma-idiomas" name="idioma-idiomas" class="droplist-campo">
+                             <option value="" disabled selected>Seleccione un campo</option>
+                             <option>Opcion 1</option>
+                             <option>Opción 2</option>
+                             <option>Opción 3</option>
+                     </select>
+                  </div>
+                  <div>
+                      <p class="gray-text">Etiqueta</p>
+                      <select id="etiqueta-idiomas" name="etiqueta-idiomas" class="droplist-campo">
+                             <option value="" disabled selected>Seleccione un campo</option>
+                             <option>Opcion 1</option>
+                             <option>Opción 2</option>
+                             <option>Opción 3</option>
+                     </select>
+                  </div>
+              </div>
+              <input type="button" class="btn-guardar" id="btn-guardar-recur-idiomas">
+              <div class="clear"></div>
+              <div class="red-line">
+                  <div class="red"></div>
+                  <img src="../img/linea-separador.jpg">
+              </div>
+              <div class="list-search">
+                  <p class="gray-text">Buscar por</p>
+                  <select class="droplist-campo">
+                         <option value="" disabled selected>Seleccione un campo</option>
+                         <option>Opcion 1</option>
+                         <option>Opción 2</option>
+                         <option>Opción 3</option>
+                 </select>
+                 <input type="search" class="search">
+              </div>
+              <div class="list" id="admin-list">
+                  <div class="list-head">
+                      <div class="item-list-head id-list">
+                          <p>ID</p>
+                      </div>
+                      <div class="item-list-head idioma-list">
+                          <p>Idioma</p>
+                      </div>
+                      <div class="item-list-head recurso-list">
+                          <p>Recurso [form + Etiq]</p>
+                      </div>
+                      <div class="item-list-head valor-list">
+                          <p>Valor</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>1</p>
+                      </div>
+                      <div class="list-items-item idioma-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item recurso-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item valor-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>2</p>
+                      </div>
+                      <div class="list-items-item idioma-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item recurso-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item valor-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>3</p>
+                      </div>
+                      <div class="list-items-item idioma-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item recurso-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item valor-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>4</p>
+                      </div>
+                      <div class="list-items-item idioma-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item recurso-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item valor-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item id-list">
+                          <p>5</p>
+                      </div>
+                      <div class="list-items-item idioma-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item recurso-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item valor-list">
+                          <p>XXXXXXXXXXX</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

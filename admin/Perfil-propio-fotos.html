@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script src="../js/scripts.js"></script>
+     <title>Grrr - Mi perfil fotos</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper">
+          <div id="container">
+            <div class="menu-cuenta">
+              <img src="../img/logo-grrr2.png" class="logo-perfil">
+              <div>
+                <ul>
+                  <li><a href="perfil-timeline.html">Inicio</a</li>
+                  <li><a href="perfil-notificaciones.html">Notificaciones</a</li>
+                  <li class="mc-activo"><a>Gruñidos</a></li>
+                </ul>
+                <div class="cont-menu-sea">
+                  <input type="search" class="search" id="search-cuenta">
+                  <img src="../img/ejm-perfil2.png" onclick="menuFotoPerfil()">
+                  <div id="menu-perfil">
+                    <ul>
+                      <li><a href="">Perfil</a></li>
+                      <li><a href="">Preferencias</a></li>
+                      <li><a href="">Ayuda</a></li>
+                      <li><a href="">Configuración</a></li>
+                      <li><a href="">Cerrar sesión</a></li>
+                    </ul>
+                  </div>
+                  <input type="button" class="btn-nuevo-grun">
+                </div>
+              </div>
+            </div>
+            <div id="cont-cuenta-noti">
+              <div>
+                <div class="info-perfil">
+                  <div class="img-info-perfil">
+                    <img src="../img/ejm-perfil2.png">
+                  </div>
+                  <div class="nombre-info-perfil">
+                    <p class="red-text">Nombre</p>
+                    <p class="red-text">@Nombre</p>
+                    <img src="../img/co.jpg">
+                  </div>
+                  <div class="datos-grun">
+                    <div>
+                      <p>Gruñidos</p>
+                      <p>xxx</p>
+                    </div>
+                    <div>
+                      <p>Siguiendo</p>
+                      <p>xxx</p>
+                    </div>
+                    <div>
+                      <p>Seguidores</p>
+                      <p>xxx</p>
+                    </div>
+                  </div>
+                </div>
+                <img src="../img/sombra-textarea.png">
+                <div class="info-perfil-propio">
+                  <p class="red-text">Información</p>
+                  <div>
+                    <p class="gray-text">Info del usuario</p>
+                  </div>
+                  <img src="../img/sombra-textarea.png">
+                </div>
+                <div class="importar-contactos">
+                  <p>Importar Contactos</p>
+                  <a href=""><img src="../img/logo-yahoo.png" alt=""></a>
+                  <a href=""><img src="../img/logo-gmail.png" alt=""></a>
+                  <a href=""><img src="../img/logo-gmas.png" alt=""></a>
+                  <a href=""><img src="../img/logo-outlook.png" alt=""></a>
+                </div>
+                <div class="buscar-amigos">
+                  <input type="search" class="search">
+                  <div>
+                    <img src="../img/buscar-amigos.png">
+                    <p>Invitar a un amigo</p>
+                  </div>
+                </div>
+                <div class="prefe-notificaciones">
+                  <p class="red-text">Preferencias</p>
+                  <div class="cont-tags">
+                    <a>Cambiar</a>
+                    <a>#Fifa16</a>
+                    <a>#FelizJueves</a>
+                    <a>XXXXXXX</a>
+                    <a>XXXXXXX</a>
+                    <a>XXXXXXX</a>
+                  </div>
+                </div>
+                <img src="../img/sombra-textarea.png">
+              </div>
+              <div class="cont-info-noti-todo">
+                <div class="opciones-timeline-usuario">
+                  <a href="Perfil-propio.html">Malestares</a>
+                  <a href="Perfil-propio-respuestas.html">Respuestas</a>
+                  <a href="Perfil-propio-fotos.html" class="activo-opciones-tm">Fotos y vídeos</a>
+                </div>
+                <div class="grunido">
+                  <div>
+                    <img src="../img/ejm-perfil2.png" class="img-perfil-grunido">
+                    <div class="texto-grun">
+                      <div>
+                        <p class="nombre-usuario">Mi nombre</p>
+                        <p class="nick-usuario">@Miusuario</p>
+                        <p class="tiempo-usuario">- 56 min</p>
+                      </div>
+                      <div>
+                        <p class="contenido-grun">“Denuncio para que estos casos no queden impunes”
+  modelo mordida por su exnovio. esta es su historia <a>bit.ly/1ho5ts9</a></p>
+                      </div>
+                      <div class="img-grun">
+                        <img src="../img/img-grun.jpg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconos-grun">
+                    <input type="button" class="icon-comentar">
+                    <input type="button" class="icon-reply">
+                    <input type="button" class="icon-like">
+                    <div class="icon-opc" onclick="menuOpc(this)">
+                      <img src="../img/icon-opc.png">
+                      <div class="menu-opc">
+                        <ul>
+                          <li><a href="">Denunciar</a></li>
+                          <li><a href="">Silenciar</a></li>
+                          <li><a href="">Bloquear</a></li>
+                          <li><a href="">Compartir</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="icon-bandera">
+                      <img src="../img/co.jpg">
+                    </div>
+                    <div class="face-grun orange-face"></div>
+                  </div>
+                </div>
+                <div class="grunido">
+                  <div>
+                    <img src="../img/ejm-perfil2.png" class="img-perfil-grunido">
+                    <div class="texto-grun">
+                      <div>
+                        <p class="nombre-usuario">Mi nombre</p>
+                        <p class="nick-usuario">@Miusuario</p>
+                        <p class="tiempo-usuario">- 56 min</p>
+                      </div>
+                      <div>
+                        <p class="contenido-grun">“Denuncio para que estos casos no queden impunes”
+  modelo mordida por su exnovio. esta es su historia <a>bit.ly/1ho5ts9</a></p>
+                      </div>
+                      <div class="img-grun">
+                        <img src="../img/img-grun.jpg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconos-grun">
+                    <input type="button" class="icon-comentar">
+                    <input type="button" class="icon-reply">
+                    <input type="button" class="icon-like">
+                    <div class="icon-opc" onclick="menuOpc(this)">
+                      <img src="../img/icon-opc.png">
+                      <div class="menu-opc">
+                        <ul>
+                          <li><a href="">Denunciar</a></li>
+                          <li><a href="">Silenciar</a></li>
+                          <li><a href="">Bloquear</a></li>
+                          <li><a href="">Compartir</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="icon-bandera">
+                      <img src="../img/co.jpg">
+                    </div>
+                    <div class="face-grun orange-face"></div>
+                  </div>
+                </div>
+                <div class="grunido">
+                  <div>
+                    <img src="../img/ejm-perfil2.png" class="img-perfil-grunido">
+                    <div class="texto-grun">
+                      <div>
+                        <p class="nombre-usuario">Mi nombre</p>
+                        <p class="nick-usuario">@Miusuario</p>
+                        <p class="tiempo-usuario">- 56 min</p>
+                      </div>
+                      <div>
+                        <p class="contenido-grun">“Denuncio para que estos casos no queden impunes”
+  modelo mordida por su exnovio. esta es su historia <a>bit.ly/1ho5ts9</a></p>
+                      </div>
+                      <div class="img-grun">
+                        <img src="../img/img-grun.jpg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iconos-grun">
+                    <input type="button" class="icon-comentar">
+                    <input type="button" class="icon-reply">
+                    <input type="button" class="icon-like">
+                    <div class="icon-opc" onclick="menuOpc(this)">
+                      <img src="../img/icon-opc.png">
+                      <div class="menu-opc">
+                        <ul>
+                          <li><a href="">Denunciar</a></li>
+                          <li><a href="">Silenciar</a></li>
+                          <li><a href="">Bloquear</a></li>
+                          <li><a href="">Compartir</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="icon-bandera">
+                      <img src="../img/co.jpg">
+                    </div>
+                    <div class="face-grun orange-face"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

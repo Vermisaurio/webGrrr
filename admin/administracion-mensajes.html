@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none"/>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+    function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+     </script>
+     <title>Grrr - Administración de Mensajes</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper"> 
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+            <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+             <p id="text-title">Administración de Mensajes</p>
+              <div class="opciones-mensaje">
+                  <div onclick="mostrarInfo_mensaje(1)" id="buscar-mensaje-btn">
+                      <p>Buscar mensaje</p>
+                  </div>
+                  <div onclick="mostrarInfo_mensaje(2)" id="detalle-mensaje-btn">
+                      <p>Detalle del mensaje</p>
+                  </div>
+              </div>
+              <div id="cont-mensaje"></div>
+         </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+     <script type="text/javascript">
+         function mostrarInfo_mensaje(cont){
+             if(cont==1) {
+                 console.log("asd");
+                     var newHTML =
+                     '<img src="../img/flecha-inferior.png" id="flecha-mensa">\
+                     <p class="red-text">Usuario</p>\
+                      <input class="search" id="buscar-mensaje1" type="search">\
+                      <div class="clear"></div>\
+                      <p class="red-text">Mensaje contiene</p>\
+                      <div class="border-input" id="mensaje-contiene-cont">\
+                          <input type="text" id="mensaje-contiene" name="mensaje-contiene">\
+                      </div>\
+                      <p class="red-text">(opcional)</p>\
+                      <div class="list" id="admin-mensa-list">\
+                          <div class="list-head">\
+                              <div class="item-list-head id-list">\
+                                  <p>ID</p>\
+                              </div>\
+                              <div class="item-list-head texto-list">\
+                                  <p>Texto</p>\
+                              </div>\
+                              <div class="item-list-head fecha-list">\
+                                  <p>Fecha</p>\
+                              </div>\
+                              <div class="item-list-head like-list">\
+                                  <p>Likes</p>\
+                              </div>\
+                              <div class="item-list-head share-list">\
+                                  <p>Shares</p>\
+                              </div>\
+                          </div>\
+                          <div class="list-items">\
+                              <div class="list-items-item id-list">\
+                                  <p>1</p>\
+                              </div>\
+                              <div class="list-items-item texto-list">\
+                                  <p>XXXXXXXXXXXXX</p>\
+                              </div>\
+                              <div class="list-items-item fecha-list">\
+                                  <p>xx/xx/xx</p>\
+                              </div>\
+                              <div class="list-items-item like-list">\
+                                  <p>0</p>\
+                              </div>\
+                              <div class="list-items-item share-list">\
+                                  <p>0</p>\
+                              </div>\
+                          </div>\
+                          <div class="list-items">\
+                              <div class="list-items-item id-list">\
+                                  <p>2</p>\
+                              </div>\
+                              <div class="list-items-item texto-list">\
+                                  <p>XXXXXXXXXXXXX</p>\
+                              </div>\
+                              <div class="list-items-item fecha-list">\
+                                  <p>xx/xx/xx</p>\
+                              </div>\
+                              <div class="list-items-item like-list">\
+                                  <p>0</p>\
+                              </div>\
+                              <div class="list-items-item share-list">\
+                                  <p>0</p>\
+                              </div>\
+                          </div>\
+                          <div class="list-items">\
+                              <div class="list-items-item id-list">\
+                                  <p>3</p>\
+                              </div>\
+                              <div class="list-items-item texto-list">\
+                                  <p>XXXXXXXXXXXXX</p>\
+                              </div>\
+                              <div class="list-items-item fecha-list">\
+                                  <p>xx/xx/xx</p>\
+                              </div>\
+                              <div class="list-items-item like-list">\
+                                  <p>0</p>\
+                              </div>\
+                              <div class="list-items-item share-list">\
+                                  <p>0</p>\
+                              </div>\
+                          </div>\
+                          <div class="list-items">\
+                              <div class="list-items-item id-list">\
+                                  <p>4</p>\
+                              </div>\
+                              <div class="list-items-item texto-list">\
+                                  <p>XXXXXXXXXXXXX</p>\
+                              </div>\
+                              <div class="list-items-item fecha-list">\
+                                  <p>xx/xx/xx</p>\
+                              </div>\
+                              <div class="list-items-item like-list">\
+                                  <p>0</p>\
+                              </div>\
+                              <div class="list-items-item share-list">\
+                                  <p>0</p>\
+                              </div>\
+                          </div>\
+                          <div class="list-items">\
+                              <div class="list-items-item id-list">\
+                                  <p>5</p>\
+                              </div>\
+                              <div class="list-items-item texto-list">\
+                                  <p>XXXXXXXXXXXXX</p>\
+                              </div>\
+                              <div class="list-items-item fecha-list">\
+                                  <p>xx/xx/xx</p>\
+                              </div>\
+                              <div class="list-items-item like-list">\
+                                  <p>0</p>\
+                              </div>\
+                              <div class="list-items-item share-list">\
+                                  <p>0</p>\
+                              </div>\
+                          </div>\
+                      </div>';
+                  document.getElementById("cont-mensaje").innerHTML = newHTML;
+                 document.getElementById("buscar-mensaje-btn").setAttribute("class","activo-mensaje");
+                 document.getElementById("detalle-mensaje-btn").setAttribute("class","");
+                 document.getElementById("flecha-mensa").style.left = 10+'px';
+             }
+            if(cont==2) {
+                var newHTML =
+                    ' <img src="../img/flecha-inferior.png" id="flecha-mensa">\
+                        <div>\
+                              <p class="red-text">ID</p>\
+                              <input class="search" id="buscar-mensaje2" type="search">\
+                          </div>\
+                          <div>\
+                              <p class="red-text">Mensaje</p>\
+                              <div class="border-input" id="mensaje-admin-men-cont">\
+                                  <input type="text" id="mensaje-admin-men" name="mensaje-admin-men">\
+                              </div>\
+                          </div>\
+                          <div>\
+                              <p class="red-text">Usuario</p>\
+                              <div class="border-input" id="usuario-admin-men-cont">\
+                                  <input type="text" id="usuario-admin-men" name="usuario-admin-men">\
+                              </div>\
+                          </div>\
+                          <div>\
+                              <p class="red-text">Empresa</p>\
+                              <div class="border-input" id="empresa-admin-men-cont">\
+                                  <input type="text" id="empresa-admin-men" name="empresa-admin-men">\
+                              </div>\
+                          </div>\
+                          <div>\
+                              <p class="red-text">Fecha</p>\
+                              <div class="border-input">\
+                                  <input type="text" id="fecha-admin-men" name="fecha-admin-men">\
+                              </div>\
+                          </div>\
+                          <div>\
+                              <p class="red-text">Likes</p>\
+                              <div class="border-input" id="likes-admin-men-cont">\
+                                  <input type="text" id="likes-admin-men" name="likes-admin-men">\
+                              </div>\
+                              <p class="red-text">Shares</p>\
+                              <div class="border-input">\
+                                  <input type="text" id="share-admin-men" name="share-admin-men">\
+                              </div>\
+                          </div>\
+                          <div>\
+                              <p class="red-text">País</p>\
+                              <div class="border-input" id="pais-admin-men-cont">\
+                                  <input type="text" id="pais-admin-men" name="pais-admin-men">\
+                              </div>\
+                              <p class="red-text">Estado</p>\
+                              <div class="border-input">\
+                                  <input type="text" id="estado-admin-men" name="estado-admin-men">\
+                              </div>\
+                          </div>\
+                          <div>\
+                              <p class="red-text">Ciudad</p>\
+                              <div class="border-input" id="ciudad-admin-men-cont">\
+                                  <input type="text" id="ciudad-admin-men" name="ciudad-admin-men">\
+                              </div>\
+                              <p class="red-text" id="text-archivo">Ver archivo adjunto</p>\
+                              <img src="../img/icon-archivo.png">\
+                          </div>';
+                document.getElementById("cont-mensaje").innerHTML = newHTML;
+                document.getElementById("detalle-mensaje-btn").setAttribute("class","activo-mensaje");
+                document.getElementById("buscar-mensaje-btn").setAttribute("class","");
+                document.getElementById("flecha-mensa").style.left = 260+'px';
+            }
+         }
+         setTimeout(mostrarInfo_mensaje(1),1000);
+     </script>
+  </body>
+</html>

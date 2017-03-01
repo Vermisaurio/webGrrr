@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <link rel="stylesheet" type="text/css" media="all" href="../styles/jsDatePick_ltr.css" />
+     <script type="text/javascript" src="../js/jsDatePick.min.1.3.js"></script>
+     <script type="text/javascript">
+         /* Script para el calendario */
+	   window.onload = function(){
+           g_globalObject = new JsDatePick({
+               useMode:1,
+			   isStripped:true,
+			   target:"calen-causas2",
+               yearsRange:[1978,2020],
+               limitToToday:false,
+               cellColorScheme:"beige",
+               dateFormat:"%m-%d-%Y",
+               imgPath:"img/",
+               weekStartDay:1
+           });		
+		   g_globalObject.setOnSelectedDelegate(function(){
+               var obj = g_globalObject.getSelectedDay();
+               alert("a date was just selected and the date is : " + obj.day + "/" + obj.month + "/" + obj.year);
+               document.getElementById("div3_example_result").innerHTML = obj.day + "/" + obj.month + "/" + obj.year;
+           });
+       };
+
+          function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+    </script>
+     <title>Grrr - Administración de Causas 2</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper"> 
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+            <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+              <p id="text-title">Administración de Causas</p>
+              <div id="cont1-causa2">
+                  <p>ID</p>
+                  <div class="border-input">
+                      <input type="text" name="id-causa2" id="id-causa2">
+                  </div>
+                  <div class="clear"></div>
+                  <p>Link de reporte</p>
+                  <div class="border-input">
+                      <input type="text" name="link-reporte" id="link-reporte">
+                  </div>
+                  <div class="clear"></div>
+                  <p id="descrip-causa2">Descripción de la entrega</p>
+                  <textarea id="text-causa2" class="textarea-causa"></textarea>
+                  <img src="../img/sombra-textarea.png" class="sombra-textarea">
+                  <div class="clear"></div>
+                  <p>Archivo adjunto</p>
+                  <select id="select-causa" name="select-causa" class="droplist">
+                     <option value="" disabled selected>Seleccione un campo</option>
+                     <option>Opcion 1</option>
+                     <option>Opción 2</option>
+                     <option>Opción 3</option>
+                  </select>
+                  <div class="clear"></div>
+                  <input type="button" class="btn-guardar" id="btn-guardar2">
+                  <input type="button" id="btn-limpiar">
+              </div>
+              <div id="cont2-causa2">
+                  <input type="button" id="btn-entregas">
+                  <div class="clear"></div>
+                  <p>Buscar por</p>
+                  <select id="buscar-por" name="buscar-por" class="droplist-campo">
+                     <option value="" disabled selected>Seleccione un campo</option>
+                     <option>Opcion 1</option>
+                     <option>Opción 2</option>
+                     <option>Opción 3</option>
+                  </select>
+                  <div id="calen-causas2"></div>
+              </div>
+              <div class="clear"></div>
+              <div class="red-line">
+                  <div class="red"></div>
+                  <img src="../img/linea-separador.jpg">
+              </div>
+              <div class="list-search">
+                  <p class="gray-text">Buscar por</p>
+                  <select class="droplist-campo">
+                         <option value="" disabled selected>Seleccione un campo</option>
+                         <option>Opcion 1</option>
+                         <option>Opción 2</option>
+                         <option>Opción 3</option>
+                 </select>
+                 <input type="search" class="search">
+              </div>
+              <div class="list" id="admin-list2">
+                  <div class="list-head">
+                      <div class="item-list-head usuario-list">
+                          <p>Usuario</p>
+                      </div>
+                      <div class="item-list-head reporte-list">
+                          <p>Link Reporte</p>
+                      </div>
+                      <div class="item-list-head tipo-list">
+                          <p>Tipo</p>
+                      </div>
+                      <div class="item-list-head fecha-list">
+                          <p>Fecha</p>
+                      </div>
+                      <div class="item-list-head fechaven-list">
+                          <p>Fecha ven.</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>1</p>
+                      </div>
+                      <div class="list-items-item reporte-list">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list">
+                          <p>11/10/10</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>2</p>
+                      </div>
+                      <div class="list-items-item reporte-list">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list">
+                          <p>11/10/10</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>3</p>
+                      </div>
+                      <div class="list-items-item reporte-list">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list">
+                          <p>11/10/10</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

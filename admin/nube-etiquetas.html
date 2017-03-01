@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+     function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+     </script>
+     <title>Grrr - Nube de Etiquetas</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper"> 
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+             <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+             <p id="text-title">Nube de etiquetas</p>
+              <div id="cont-nube-etiquetas">
+                  <div>
+                      <div>
+                          <div>
+                              <input type="checkbox" class="bloq-list" id="insti-nube-etiquetas">
+                              <label for="insti-nube-etiquetas"></label>
+                              <p class="gray-text">Por institución</p>
+                              <select class="droplist-campo">
+                                     <option value="" disabled selected>Seleccione una institución</option>
+                                     <option>Opcion 1</option>
+                                     <option>Opción 2</option>
+                                     <option>Opción 3</option>
+                             </select>
+                          </div>
+                          <div>
+                              <input type="checkbox" class="bloq-list" id="causa-nube-etiquetas">
+                              <label for="causa-nube-etiquetas"></label>
+                              <p class="gray-text">Por causa</p>
+                              <select class="droplist-campo">
+                                     <option value="" disabled selected>Seleccione una causa</option>
+                                     <option>Opcion 1</option>
+                                     <option>Opción 2</option>
+                                     <option>Opción 3</option>
+                             </select>
+                          </div>
+                          <div>
+                              <input type="checkbox" class="bloq-list" id="pais-nube-etiquetas">
+                              <label for="pais-nube-etiquetas"></label>
+                              <p class="gray-text">Por país</p>
+                              <select class="droplist-campo">
+                                     <option value="" disabled selected>Seleccione un país</option>
+                                     <option>Opcion 1</option>
+                                     <option>Opción 2</option>
+                                     <option>Opción 3</option>
+                             </select>
+                          </div>
+                      </div>
+                      <div>
+                          <div>
+                              <input type="checkbox" class="bloq-list" id="region-nube-etiquetas">
+                              <label for="region-nube-etiquetas"></label>
+                              <p class="gray-text">Por región</p>
+                              <select class="droplist-campo">
+                                     <option value="" disabled selected>Seleccione una región</option>
+                                     <option>Opcion 1</option>
+                                     <option>Opción 2</option>
+                                     <option>Opción 3</option>
+                             </select>
+                          </div>
+                          <div>
+                              <input type="checkbox" class="bloq-list" id="etiq-nube-etiquetas">
+                              <label for="etiq-nube-etiquetas"></label>
+                              <p class="gray-text">Por etiqueta</p>
+                              <select class="droplist-campo">
+                                     <option value="" disabled selected>Seleccione una etiqueta</option>
+                                     <option>Opcion 1</option>
+                                     <option>Opción 2</option>
+                                     <option>Opción 3</option>
+                             </select>
+                             <input type="button" class="btn-consultar" id="consul-nube">
+                             <input type="button" class="btn-compartir">
+                          </div>
+                          <div>
+                              <div class="border-input" id="cont-busc-nube">
+                                  <input type="text" id="busc-nube">
+                              </div>
+                              <input type="button" class="btn-buscar" id="buscar-nube">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="red-line">
+                      <div class="red"></div>
+                      <img src="../img/linea-separador.jpg">
+                  </div>
+                  <div class="list-search">
+                      <p class="gray-text">Buscar por</p>
+                      <select class="droplist-campo">
+                             <option value="" disabled selected>Seleccione un campo</option>
+                             <option>Opcion 1</option>
+                             <option>Opción 2</option>
+                             <option>Opción 3</option>
+                     </select>
+                     <input type="search" class="search">
+                  </div>
+                  <div>
+                      <div class="list" id="nubeti-list">
+                          <div class="list-head">
+                              <div class="item-list-head queja-list">
+                                  <p>Queja</p>
+                              </div>
+                              <div class="item-list-head etiqueta-list">
+                                  <p>Etiquetas</p>
+                              </div>
+                              <div class="item-list-head uso-etiqueta-list">
+                                  <p>Uso etiquetas</p>
+                              </div>
+                              <div class="item-list-head like-list2">
+                                  <p>Likes</p>
+                              </div>
+                              <div class="item-list-head share-list2">
+                                  <p>Shares</p>
+                              </div>
+                          </div>
+                          <div class="list-items">
+                              <div class="list-items-item queja-list">
+                                  <p>XXXXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item etiqueta-list">
+                                  <p>XXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item uso-etiqueta-list">
+                                  <p>XXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item like-list2">
+                                  <p>XXX</p>
+                              </div>
+                              <div class="list-items-item share-list2">
+                                  <p>XXX</p>
+                              </div>
+                          </div>
+                          <div class="list-items">
+                              <div class="list-items-item queja-list">
+                                  <p>XXXXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item etiqueta-list">
+                                  <p>XXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item uso-etiqueta-list">
+                                  <p>XXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item like-list2">
+                                  <p>XXX</p>
+                              </div>
+                              <div class="list-items-item share-list2">
+                                  <p>XXX</p>
+                              </div>
+                          </div>
+                          <div class="list-items">
+                              <div class="list-items-item queja-list">
+                                  <p>XXXXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item etiqueta-list">
+                                  <p>XXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item uso-etiqueta-list">
+                                  <p>XXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item like-list2">
+                                  <p>XXX</p>
+                              </div>
+                              <div class="list-items-item share-list2">
+                                  <p>XXX</p>
+                              </div>
+                          </div>
+                          <div class="list-items">
+                              <div class="list-items-item queja-list">
+                                  <p>XXXXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item etiqueta-list">
+                                  <p>XXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item uso-etiqueta-list">
+                                  <p>XXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item like-list2">
+                                  <p>XXX</p>
+                              </div>
+                              <div class="list-items-item share-list2">
+                                  <p>XXX</p>
+                              </div>
+                          </div>
+                          <div class="list-items">
+                              <div class="list-items-item queja-list">
+                                  <p>XXXXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item etiqueta-list">
+                                  <p>XXXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item uso-etiqueta-list">
+                                  <p>XXXXXXXXXXXX</p>
+                              </div>
+                              <div class="list-items-item like-list2">
+                                  <p>XXX</p>
+                              </div>
+                              <div class="list-items-item share-list2">
+                                  <p>XXX</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="contenedor-gris" id="contg-nube-eti">
+                          <div>
+                              <div>
+                                  <input type="checkbox" class="bloq-list" id="infog-img1">
+                                  <label for="infog-img1"></label>
+                                  <img src="../img/icon-torta.png">
+                              </div>
+                              <div>
+                                  <input type="checkbox" class="bloq-list" id="infog-img2">
+                                  <label for="infog-img2"></label>
+                                  <img src="../img/icon-barrash.png">
+                              </div>
+                              <div>
+                                  <input type="checkbox" class="bloq-list" id="infog-img3">
+                                  <label for="infog-img3"></label>
+                                  <img src="../img/icon-picos.png">
+                              </div>
+                              <div>
+                                  <input type="checkbox" class="bloq-list" id="infog-img4">
+                                  <label for="infog-img4"></label>
+                                  <img src="../img/icon-barrasv.png">
+                              </div>
+                          </div>
+                          <div class="red-line-ver">
+                              <div class="red2"></div>
+                              <img src="../img/linea-separador4.png">
+                          </div>
+                          <div>
+                              <p class="red-text">Información Gráfica de la nube de etiquetas Institución</p>
+                              <img src="../img/img-nube-eti.png">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>

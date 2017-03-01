@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../styles/general.css">
+     <link rel="stylesheet" type="text/css" href="../styles/media.css">
+     <script type="text/javascript">
+     /*scrip menu*/
+     function desplegarMenu(){
+              menu = document.getElementById("menu-trigger");
+              if (menu.style.visibility=="hidden") {
+                 menu.style.visibility="visible";
+                 menu.style.opacity = 1;
+              }
+              else{
+                menu.style.visibility="hidden";
+                  menu.style.opacity = 0;
+              }
+       }
+     </script>
+     <title>Grrr - Administración de Causas</title>
+  </head>
+  <body id="body-causas">
+     <div id="wrapper"> 
+         <header>
+          <div id="logo-grrr-admin">
+              <img src="../img/logo-grrr.png" alt="logo-grrr">
+          </div>
+             <ul id="menu">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil </a></li>
+                          <li><a href="idiomas.html">idiomas </a></li>
+                          <li><a href="recurso-idiomas.html">recurso-idiomas </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          <div id="btn-trigger" onclick="desplegarMenu()"></div>
+              <ul id="menu-trigger" style="visibility:hidden">
+                  <li>
+                     <a href="administracion-usuarios.html">Admin Usuarios</a>
+                     <ul>
+                          <li><a href="perfil.html">Perfil</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                      <a href="#">Planes</a>
+                      <ul>
+                          <li><a href="planes.html">Entrega de planes </a></li>
+                          <li><a href="planes-y-usuarios.html">Usuarios Por plan</a></li>
+                      </ul>
+
+                  </li>
+                  <li>
+                       <a href="administracion-causas2.html">Entregas</a>
+                        <ul>
+                          <li><a href="asignacion-entregables.html">Entregas por usuario</a></li>
+                        </ul>
+                  </li>
+                  <li>
+                       <a href="administracion-mensajes.html">Mensajes</a>
+                  </li>
+                  <li><a href="administracion-etiquetas.html">Etiquetas</a>
+                        <ul>
+                          <li><a href="nube-etiquetas.html">Nube de etiquetas </a></li>
+                        </ul>
+                  </li>
+                  <li><a href="administracion-causas.html">Causas</a></li>
+                  <li><a href="administracion-denuncias.html">Denuncias</a></li>
+                  <li>
+                     <a href="administracion-Reportes.html">Reportes</a>
+                  </li>
+              </ul>
+          </header>
+          <div id="container">
+             <p id="text-title">Planes y Usuarios</p>
+              <div id="cont1-planusu">
+                  <p class="gray-text">Plan</p>
+                  <div class="border-input">
+                      <input type="text" name="plan-planusu" id="plan-planusu">
+                  </div>
+                  <p class="gray-text">Usuario</p>
+                  <select id="usuario-planusu" name="usuario-planusu" class="droplist-campo">
+                     <option value="" disabled selected>Seleccione un campo</option>
+                     <option>Opcion 1</option>
+                     <option>Opción 2</option>
+                     <option>Opción 3</option>
+                  </select>
+              </div>
+              <div id="cont2-planusu">
+                  <p class="gray-text">Plan: XXXXXXXXXXXXXXXX</p>
+                  <p class="gray-text">Tipo de plan: XXXXXXXXXXX</p>
+                  <div class="clear"></div>
+                  <p class="gray-text">Nombre: XXXXXXXXXX</p>
+                  <p class="gray-text">Apellido: XXXXXXXXXXXXXX</p>
+              </div>
+              <input type="button" class="btn-guardar" id="btn-planusu">
+              <div class="clear"></div>
+             <div class="red-line">
+                  <div class="red"></div>
+                  <img src="../img/linea-separador.jpg">
+              </div>
+              <div class="list-search">
+                  <p class="gray-text">Buscar por</p>
+                  <select class="droplist-campo">
+                         <option value="" disabled selected>Seleccione un campo</option>
+                         <option>Opcion 1</option>
+                         <option>Opción 2</option>
+                         <option>Opción 3</option>
+                 </select>
+                 <input type="search" class="search">
+              </div>
+              <div class="list" id="planusu-list">
+                  <div class="list-head">
+                      <div class="item-list-head usuario-list">
+                          <p>Usuario</p>
+                      </div>
+                      <div class="item-list-head reporte-list2">
+                          <p>Link Reporte</p>
+                      </div>
+                      <div class="item-list-head tipo-list2">
+                          <p>Tipo</p>
+                      </div>
+                      <div class="item-list-head fecha-list2">
+                          <p>Fecha</p>
+                      </div>
+                      <div class="item-list-head fechaven-list2">
+                          <p>Fecha ven.</p>
+                      </div>
+                      <div class="item-list-head select-list">
+                          <p>Select</p>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>1</p>
+                      </div>
+                      <div class="list-items-item reporte-list2">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list2">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list2">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list2">
+                          <p>11/10/10</p>
+                      </div>
+                      <div class="list-items-item select-list">
+                           <input type="checkbox" name="planusu-list" class="bloq-list" id="planusu-list" value="">
+                          <label for="planusu-list"></label>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>2</p>
+                      </div>
+                      <div class="list-items-item reporte-list2">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list2">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list2">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list2">
+                          <p>11/10/10</p>
+                      </div>
+                      <div class="list-items-item select-list">
+                           <input type="checkbox" name="planusu-list2" class="bloq-list" id="planusu-list2" value="">
+                          <label for="planusu-list2"></label>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>3</p>
+                      </div>
+                      <div class="list-items-item reporte-list2">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list2">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list2">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list2">
+                          <p>11/10/10</p>
+                      </div>
+                      <div class="list-items-item select-list">
+                           <input type="checkbox" name="planusu-list3" class="bloq-list" id="planusu-list3" value="">
+                          <label for="planusu-list3"></label>
+                      </div>
+                  </div>
+                  <div class="list-items">
+                      <div class="list-items-item usuario-list">
+                          <p>4</p>
+                      </div>
+                      <div class="list-items-item reporte-list2">
+                          <p>XXXXXXXXXXXXX</p>
+                      </div>
+                      <div class="list-items-item tipo-list2">
+                          <p>Tipo A</p>
+                      </div>
+                      <div class="list-items-item fecha-list2">
+                          <p>10/10/10</p>
+                      </div>
+                      <div class="list-items-item fechaven-list2">
+                          <p>11/10/10</p>
+                      </div>
+                      <div class="list-items-item select-list">
+                           <input type="checkbox" name="planusu-list4" class="bloq-list" id="planusu-list4" value="">
+                          <label for="planusu-list4"></label>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer>
+              <a href="#">Sobre nosotros</a>
+              <a href="#">Ayuda</a>
+              <a href="#">Blog</a>
+              <a href="#">Condiciones</a>
+              <a href="#">Privacidad</a>
+              <a href="#">Medios</a>
+              <p>© 2015 Grrr</p>
+          </footer>
+     </div>
+  </body>
+</html>
