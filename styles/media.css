@@ -1,0 +1,1870 @@
+@media screen and (min-width: 2100px) {
+    #logo-grrr-landing {
+        margin-bottom: 100px;
+    }
+
+    #text-landing {
+        margin-top: 300px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+@media screen and (min-width: 1721px) {
+    #body-landing {
+        background-size: 100%;
+    }
+
+    #text-landing {
+        margin-top: 200px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1575px){
+    #cont1-planes1 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1339px) {
+    #cont1-causa1 {
+        margin-top: 10px !important;
+    }
+
+    #text-title {
+        margin-top:25px;
+    }
+}
+
+@media screen and (max-width: 1175px){
+    #cont2-causa2 {
+        margin-left: 170px;
+    }
+}
+
+@media screen and (max-width: 1166px) {
+    #cont2-causa1 {
+        margin-left: 0px;
+        float: right;
+        margin-right: 10px;
+    }
+
+    #btn-cancelar {
+        margin-left: -97px;
+        margin-right: 10px;
+    }
+
+    .list{
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    .bloqueado-list {
+        width: 300px;
+        border-right: none !important;
+        padding-right: 25px;
+        text-align: right;
+    }
+
+    .causa-list {
+        width: 300px;
+        padding-left: 165px;
+    }
+
+    .usuario-list {
+        width: 110px;
+    }
+
+    .reporte-list2 {
+        width: 180px;
+    }
+
+    .tipo-list2 {
+        width: 110px;
+    }
+
+    .fecha-list2 {
+        width: 110px;
+    }
+
+    .fechaven-list2{
+        width: 100px;
+    }
+
+    .select-list {
+        width: 110px;
+    }
+
+    #cont2-idiomas {
+        margin-left: 80px;
+    }
+
+    #cont1-planusu{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont2-planusu{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont-mensaje {
+        width: 100%;
+    }
+
+    .id-list {
+        width: 100px;
+        padding-left: 20px;
+    }
+
+    .texto-list {
+        width: 150px;
+    }
+
+    .fecha-list {
+        width: 150px;
+    }
+
+    .like-list {
+        width: 130px;
+    }
+
+    #admin-mensa-list {
+        max-width: 760px;
+    }
+
+    .list-items-item {
+        font-size: 13px;
+    }
+
+    #text-adetiquetas {
+        max-width: 390px;
+    }
+
+   #cont-id-adetiquetas {
+        margin-right: 230px;
+    }
+
+    .border-input {
+        max-width: 240px;
+    }
+
+    #text-title {
+        margin-bottom: 80px;
+    }
+
+    #cont2-causa2 {
+        margin-left: 130px;
+    }
+
+    .reporte-list {
+        width: 150px;
+    }
+
+    .fechaven-list {
+        width: 150px;
+    }
+
+    .queja-list {
+        width: 220px;
+    }
+
+    .etiqueta-list {
+        width: 170px;
+    }
+
+    .uso-etiqueta-list {
+        width: 220px;
+    }
+
+    #cont-nube-etiquetas > div:first-child > div:last-child {
+        margin-left: 170px;
+    }
+
+    #nubeti-list {
+        display: block !important;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    #videos {
+        margin-right: 35px;
+    }
+
+    #btn-guardar-adetiquetas{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1163px) {
+    #logo-grrr-admin {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #menu {
+        margin: 0 auto;
+        display: block;
+        width: 888px;
+    }
+
+    #cont2-idiomas {
+        margin-left: 60px;
+    }
+
+    .list-search {
+        text-align: center;
+    }
+
+    #cont-causa2 {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    #cont-id-addenuncias {
+        margin-right: 70px;
+    }
+
+    #cont2-admin-repor {
+        width: 100%;
+    }
+
+     #cont1-admin-repor {
+        display: block;
+    }
+
+    #op-admin-repor {
+        width: 100%;
+    }
+
+    #op-admin-repor li p {
+        text-align: center;
+    }
+
+    #btn-atras-filtros {
+        display: block;
+    }
+
+    #filtros-reporte-list {
+       display: block !important;
+    }
+
+    #btn-agregar-filtros {
+        margin-right: 96px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    #mostrar-reporte > div > p {
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #btn-ejecutar-reporte {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .droplist-campo {
+        margin-left: 0%;
+    }
+
+    #btn-siguiente-mostrar-reporte {
+        margin-right: 15%;
+    }
+
+    #mostrar-reporte > div:nth-child(3) > p{
+        display: inline-block;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    #mostrar-reporte2 > div:nth-child(5) > p{
+        display: inline-block;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    #cont-nube-etiquetas > div:first-child > div:last-child {
+        margin-left: 110px;
+    }
+
+    #datos-reporte{
+        padding-top: 20px;
+    }
+
+    #btn-siguiente-reportes{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #op-admin-report li{
+        padding-left: 0px;
+    }
+
+    #op-admin-report li{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1085px){
+    #likes-admin-men-cont {
+        max-width: 80%;
+        margin-right: 0px;
+    }
+
+    #pais-admin-men-cont {
+        max-width: 80%;
+        margin-right: 0px;
+    }
+
+    #cont2-causa2 {
+        margin-left: 80px;
+    }
+
+    #cont-nube-etiquetas > div:first-child > div:last-child {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    #cont-id-addenuncias {
+        margin-right: 20px;
+    }
+    #mensaje-contiene-cont {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1016px){
+    #cont-like {
+        margin-left: 160px;
+    }
+
+     #cont-id-adetiquetas {
+        margin-right: 170px;
+    }
+
+    #cont1-causa2 {
+        display: block;
+        margin:0 auto;
+    }
+
+    #cont2-causa2 {
+        display: block;
+        margin:0 auto;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+
+    #btn-limpiar {
+        float: none;
+    }
+
+    #btn-entregas {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    #buscar-por {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #cont2-causa2 p{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #calen-causas2 {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #cont-nube-etiquetas > div:first-child > div:last-child {
+        margin-left: 20px;
+    }
+
+    .red-line{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #body-landing-landing {
+        background-attachment: fixed;
+        background-position: -630px 0px;
+    }
+
+    #videos {
+        display: none;
+    }
+
+    #form {
+        margin: 0 auto;
+        display: block;
+    }
+
+    #logo-grrr-landing {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #logo-grrr-landing img {
+        max-width: 320px;
+    }
+
+    #text-landing {
+        display: none;
+    }
+
+    #form > p:first-child {
+      text-shadow:5px 0px 5px #000000;
+    }
+}
+
+@media screen and (max-width: 985px){
+    #cont1-causa1 {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    #cont2-causa1 {
+        margin: 0 auto;
+        display: block;
+        max-width: 520px;
+        float: none;
+    }
+
+    #cont2-causa1 > p {
+        margin-right: 50px;
+    }
+
+    .sombra-textarea2 {
+        position: relative;
+        margin-right: 24%;
+        margin-bottom: 60px;
+    }
+
+    #btn-cancelar {
+        float: none;
+        margin-left: none;
+        position: absolute;
+        right: 20px;
+        margin-top: -10px;
+    }
+
+    .red-line {
+        display: none;
+    }
+
+    .gray-text {
+        display: block;
+        margin-top: 0px;
+        text-align:center;
+        margin-top: 5px;
+    }
+
+    .list-search{
+        margin-top: 40px;
+    }
+
+    #cont2-planusu p {
+       margin: 0 auto;
+    }
+
+    #cont-id-addenuncias {
+       display: block;
+        margin: 0 auto;
+    }
+
+    #cont-usuario-reporta-addenuncias {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #text1-addenuncias {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #text2-addenuncias, #text3-addenuncias {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #text3-addenuncias {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #btn-procesado-addenuncias {
+        margin-left: 40%;
+    }
+
+    #queja-bloqueada + label:before{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont-id-adetiquetas {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont-eti-adetiquetas {
+        display: block;
+        margin: 0 auto;
+    }
+
+     #etiqueta-bloqueada + label:before{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #text-adetiquetas {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont-like {
+        display: block;
+        margin: 0 auto;
+        width: 270px;
+    }
+
+    #cont-like div {
+        max-width: 240px !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont-like > div:last-child {
+        max-width: 240px !important;
+        margin-bottom: 30px;
+    }
+
+    #btn-guardar-adetiquetas {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #usuario-planusu {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #text-title {
+        margin-bottom: 30px;
+    }
+
+    #cont-nube-etiquetas > div:first-child > div:last-child {
+        display: block;
+        margin:0 auto;
+        margin-top: -20px;
+    }
+
+    #cont-nube-etiquetas > div:first-child > div {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #cont-nube-etiquetas > div > div > div > p {
+        display: inline-block;
+    }
+
+    .list-search > p:first-child {
+        text-align: left;
+        margin-top: 5px;
+        display: inline-block;
+    }
+
+    #cont-like > p:first-child, #cont-like > p:nth-child(4), #cont-like > p:nth-child(7){
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    #menu {
+        height: 37px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    #menu {
+        height: 25px;
+        width: 800px;
+
+    }
+
+    #menu ul {
+        top: 25px;
+    }
+
+    #menu a {
+        width: 100px;
+        font-size: 10px;
+    }
+
+    #menu li {
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+
+    }
+
+    #cont2-planes2 {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cont1-planes1 {
+        margin-bottom: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-height: 899px) {
+    footer {
+        margin-bottom: -50px;
+    }
+
+    #text-landing {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+     #menu a {
+        width: 90px;
+    }
+
+    #menu li {
+        width: 90px;
+    }
+
+     #menu {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .list {
+        max-width: 700px;
+    }
+
+    .bloqueado-list {
+        width: 280px;
+    }
+
+    .tipo-list2 {
+        width: 60px;
+    }
+
+    .fecha-list {
+        width: 130px;
+    }
+
+    .tipo-list {
+        width: 100px;
+    }
+
+    .queja-list {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+/*inicio menu trigger*/
+    #menu {
+        display: none;
+    }
+
+    #btn-trigger {
+        display: block;
+        background-image: url("../img/menu-cel.png");
+        background-repeat: no-repeat;
+        width: 67px;
+        height: 65px;
+        margin: 0;
+        position: absolute;
+        left: 10px;
+        top: 40px;
+    }
+
+    #btn-trigger:hover {
+        background-size: 97%;
+        background-position: center;
+    }
+
+    #menu-trigger, #menu-trigger ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #menu-trigger {
+        height: 35px;
+        background-color: #fdfdfd;
+        box-shadow:0 1px 10px #000000;
+        display: block;
+        margin-bottom: 6px;
+        zoom:1;
+        left: 10px;
+        position: absolute;
+        top: 105px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+    }
+
+    #menu-trigger li {
+        float: none;
+        position: relative;
+        padding-top: 12px;
+        width: 215px;
+        height: 37px;
+        text-align: center;
+        border-bottom: 1px solid #e12227;
+        background-color: #fdfdfd;
+        box-sizing: border-box;
+    }
+
+    #menu-trigger > li:last-child > a {
+        border-right: none;
+    }
+
+    #menu-trigger li ul {
+        border-bottom: none;
+    }
+
+    #menu-trigger a {
+        color: #999;
+        font-family:'HelveticaNeuel-Roman';
+        font-size: 12px;
+        font-style: bold;
+        text-decoration: none;
+        display: block;
+        width: 215px;
+    }
+
+    #menu-trigger ul {
+        margin: 0;
+        _margin: 0; /*IE6 only*/
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        z-index: 1;
+        background: #fdfdfd;
+        box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+        border-radius: 3px;
+    }
+
+    #menu-trigger li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        margin-left: 215px;
+    }
+
+    #menu-trigger > li ul {
+        text-align: center;
+    }
+
+    #menu-trigger > li:hover {
+        background-color: #ebecec;
+        border-bottom: 1px solid #e12227;
+    }
+
+    #menu-trigger > li ul li{
+        border-bottom: 1px solid #e12227;
+        box-shadow: inset 2px 0px 10px #E0E0E0;
+    }
+
+    #menu-trigger > li ul li:hover {
+        border-left: 1px solid #e12227;
+    }
+
+    #menu-trigger > li ul li:hover > a {
+       color:#E12227;
+    }
+
+    #menu-trigger > li:hover > a {
+        color:#E12227;
+    }
+
+    #menu-trigger ul li > a {
+        border-radius: 0 0 3px 3px;
+    }
+/*fin menu trigger*/
+
+    #container {
+        background-color: white;
+    }
+
+    #btn-procesado-addenuncias {
+        margin-left: 35%;
+    }
+
+    #admin-mensa-list {
+        max-width: 590px;
+    }
+
+    #admin-mensa-list p {
+        padding-left: 0px !important;
+    }
+
+    #cont-mensaje p {
+        padding-left: 5px;
+    }
+
+    .like-list {
+        width: 90px;
+        margin-left: 10px;
+        text-align: none;
+    }
+
+    .share-list {
+        width: 100px;
+        text-align: none;
+    }
+
+    .fecha-list {
+        width: 100px;
+        margin-left: 10px;
+        text-align: none;
+    }
+
+    .texto-list {
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    #datos-reporte > div {
+        width: 375px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #datos-reporte > div:nth-child(2) {
+        margin: 0 auto;
+    }
+
+    #datos-reporte > div > div p {
+        display: inline-block;
+
+    }
+
+    #fuentes-datos > div {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contenedores-fuente {
+        display: block;
+        margin:0 auto;
+        margin-bottom: 15px;
+    }
+
+    #fuentes-datos > div:nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #fuentes-datos > div > p {
+        text-align: center;
+    }
+
+    #columnas-mostrar > div {
+        display: block;
+    }
+
+    #columnas-mostrar > div:nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #columnas-mostrar > div:nth-child(2) > div:first-child{
+        margin-bottom: 10px;
+        margin-right: 4px;
+    }
+      #columnas-mostrar > div:nth-child(2) > div:last-child{
+        margin-right: 58px;
+    }
+
+    #columnas-mostrar > div > p {
+        text-align: center;
+    }
+
+    #logo-grrr-admin {
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    #cont1-admin-repor {
+        margin-top: 20px;
+    }
+
+    #fuentes-datos > div:nth-child(2) > div:first-child{
+        margin-bottom: 10px;
+        margin-right: 3px;
+    }
+
+    #fuentes-datos > div:nth-child(2) > div:last-child{
+        margin-right: 59px;
+    }
+}
+
+@media screen and (max-width: 770px){
+     #admin-repor-list {
+        max-width: 550px;
+    }
+    #admin-repor-list > div > div {
+        width: 130px;
+    }
+
+    #filtros-reporte-list {
+        max-width: 600px;
+    }
+
+    #filtros-reporte-list > div > div {
+        width: 140px;
+    }
+
+    #cont-valor-filtros {
+        width: 400px;
+    }
+
+    #reporte-list {
+        max-width: 600px;
+    }
+
+    #reporte-list > div > div {
+        width: 140px;
+    }
+
+    .list-search > select {
+       padding-left: 3px;
+       width: 170px
+    }
+
+    .list-search > input{
+        width: 245px;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 730px){
+    #text-title {
+        margin-top: 30px;
+    }
+
+    .list {
+        max-width: 500px;
+    }
+
+    .bloqueado-list {
+        width: 100px;
+    }
+
+    .usuario-list {
+        width: 90px;
+    }
+    .causa-list {
+        width: 300px;
+        padding-left: 130px;
+    }
+
+   .list {
+        max-width: 570px;
+    }
+
+    .usuario-list {
+        width: 90px;
+    }
+
+   .select-list {
+        width: 40px;
+    }
+
+    .reporte-list2 {
+        width: 120px;
+    }
+
+    #likes-admin-men-cont{
+        max-width: 55%;
+        margin-right: 100px;
+    }
+
+    #pais-admin-men-cont{
+        max-width: 55%;
+        margin-right: 100px;
+    }
+
+    #mensaje-admin-men-cont {
+        max-width: 55%;
+    }
+
+    #usuario-admin-men-cont {
+        max-width: 55%;
+    }
+
+    #empresa-admin-men-cont {
+        max-width: 55%;
+    }
+
+    .reporte-list {
+        width: 130px;
+    }
+
+    .fechaven-list {
+        width: 100px;
+    }
+
+    #mensaje-contiene-cont {
+        max-width: 40%;
+    }
+
+    .uso-etiqueta-list {
+        width: 150px;
+    }
+
+    .etiqueta-list {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    #terminos {
+        float: right;
+        margin-right: -135px;}
+
+    #check + label:before {
+        float: right;
+        margin-right: 110px;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .list-search {
+        margin-top: 40px;
+    }
+
+    .search {
+        margin-left: 0;
+    }
+
+    #admin-mensa-list {
+        max-width: 550px;
+    }
+    #mensaje-contiene-cont {
+        margin-left: 0px;
+    }
+
+    #btn-agregar-filtros {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #filtros-reporte-list {
+        max-width: 430px;
+    }
+
+    #filtros-reporte-list > div > div {
+        width: 100px;
+    }
+
+    #filtros-reporte > div:first-child {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #filtros-reporte > div:nth-child(2) {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #filtros-reporte > div:nth-child(3) {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #filtros-reporte > div:nth-child(3) p {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+
+    #operador-filtro {
+        margin-left: 0px !important;
+    }
+
+    #logo-login {
+        width: 265px;
+    }
+
+    #btn-trigger {
+        width: 50px;
+        height: 50px;
+        background-size: 100%;
+        top: 56px;
+    }
+
+    #menu-trigger li {
+        width: 170px;
+    }
+
+    #menu-trigger a {
+        width: 170px;
+    }
+
+    #menu-trigger ul {
+        left: -45px;
+    }
+
+    #buscar-mensaje1{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 632px){
+
+    .list-search > p:first-child {
+        text-align: left;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 626px){
+    #likes-admin-men-cont {
+        margin-right: 100px;;
+    }
+
+    #pais-admin-men-cont {
+        margin-right: 100px;
+    }
+
+    #ciudad-admin-men-cont {
+        margin-right: 170px;
+    }
+
+    #reporte-list {
+        max-width: 400px;
+    }
+
+    #reporte-list > div > div {
+        width: 90px;
+    }
+
+    #text-title {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    #likes-admin-men-cont {
+        margin-right: 65px;
+    }
+
+    #pais-admin-men-cont {
+        margin-right: 65px;
+    }
+
+    #ciudad-admin-men-cont {
+        margin-right: 65px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+   .list {
+        max-width: 460px;
+    }
+
+    .reporte-list2 {
+         width: 90px;
+    }
+
+    .fecha-list2 {
+         width: 50px;
+    }
+
+    .fechaven-list2 {
+        width: 80px;
+    }
+
+    #btn-procesado-addenuncias {
+        margin-left: 30%;
+    }
+
+    .id-list {
+        width: 50px;
+    }
+
+    .texto-list {
+        width: 70px;
+        margin-left: 0px
+    }
+
+    .texto-list > p {
+    width: 100% !important;
+    }
+
+    .fecha-list {
+        width: 70px;
+        margin-left: 0px;
+    }
+
+    .fecha-list > p {
+        width: 100% !important;
+    }
+
+    .like-list {
+        width: 50px;
+        margin-left: 0px;
+    }
+
+    .like-list > p {
+        width: 100% !important;
+    }
+
+    .share-list {
+        width: 70px;
+        margin-left: 0px;
+    }
+
+    .share-list > p {
+        width: 100% !important;
+    }
+
+    .list-items-item {
+        font-size: 9px;
+        margin-left: -2px !important;
+    }
+
+    #admin-mensa-list {
+        max-width: 340px;
+    }
+
+    .id-list {
+        width: 46px;
+    }
+
+    .id-list < p {
+        width: 100% !important;
+    }
+
+    #admin-repor-list {
+        max-width: 400px;
+    }
+
+    #admin-repor-list > div > div {
+        width: 90px;
+    }
+
+    .causa-list {
+        width: 220px;
+        padding-left: 94px;
+    }
+
+    .fechaven-list {
+        width: 70px;
+    }
+
+    .tipo-list {
+        width: 80px;
+    }
+    .queja-list {
+        width: 80px;
+    }
+
+    .etiqueta-list {
+        width: 100px;
+    }
+
+    .uso-etiqueta-list {
+        width: 130px;
+    }
+
+    #consul-nube {
+        margin-left: 145px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .btn-compartir {
+        margin-right: 15%;
+    }
+
+    #cont-busc-nube {
+        margin-left: 0px;
+    }
+    #buscar-nube {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .list-search > p:first-child {
+        text-align: center;
+    }
+
+    #text-causa2{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #cont1-causa2 > img {
+          margin-left: 4%;
+    }
+
+    #cont-busc-nube {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    #consul-nube {
+        margin-left: 99px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .list-search > p:first-child {
+    display: block;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .border-input {
+        width: 190px;
+    }
+
+    .list {
+        max-width: 320px;
+    }
+
+    .causa-list {
+        width: 140px;
+        padding-left: 50px;
+    }
+
+    .textarea-causa {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    #cont1-planusu div {
+        margin: 0 auto;
+        display: block;
+    }
+
+   #cont1-causa1 p, #cont2-causa1 p, #cont1-causa2 p, #cont2-causa2 p, #cont1-planes1 p, #cont2-planes2 p {
+        width: 118px;
+        margin-left: 5px;
+   }
+
+   .usuario-list {
+        width: 40px;
+        padding-left: 0px;
+    }
+
+    .reporte-list2 {
+        width: 70px;
+    }
+
+    .tipo-list2 {
+        width: 30px;
+    }
+
+    .fecha-list2 {
+        width: 45px;
+    }
+
+    .fechaven-list2 {
+        width: 50px;
+    }
+
+    .select-list {
+        width: 40px;
+    }
+
+    .item-list-head {
+        font-size: 10px;
+    }
+
+    .list-items-item {
+         font-size: 9px;
+    }
+
+    #btn-procesado-addenuncias {
+        margin-left: 25%;
+    }
+    #cont-mensaje p {
+        width: 60px;
+    }
+
+    #likes-admin-men-cont {
+        margin-right: 170px;
+    }
+
+    #pais-admin-men-cont {
+        margin-right: 170px;
+    }
+
+    #ciudad-admin-men-cont {
+        margin-right: 170px;
+    }
+
+    #btn-siguiente-mostrar-reporte {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+
+   #logo-grrr-admin img {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .reporte-list {
+        width: 75px;
+    }
+
+    .tipo-list {
+        width: 50px;
+    }
+
+    .fechaven-list {
+        width: 55px;
+    }
+
+     #cont2-causa1 > p {
+        margin-left: 0px;
+    }
+
+    .sombra-textarea{
+        margin-left: 9px;
+    }
+
+    .sombra-textarea2{
+        margin-right: 9px;
+    }
+
+    #cont2-causa2 > p {
+        display: block;
+        margin: 0 auto !important;
+        width: 65px !important;
+        margin-bottom: 5px;
+    }
+
+    #btn-guardar2 {
+        margin-right: 10px;
+    }
+
+    .queja-list {
+        width: 50px;
+    }
+
+    .etiqueta-list {
+        width: 70px;
+    }
+
+    .uso-etiqueta-list {
+        width: 80px;
+    }
+
+    .share-list2 {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    footer {
+        padding-top: 5px;
+    }
+
+    .btn-guardar {
+        margin-left: 10px;
+    }
+
+    .textarea-addenuncias{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #likes-admin-men-cont {
+        margin-right: 110px;
+    }
+
+    #pais-admin-men-cont {
+        margin-right: 110px;
+    }
+
+    #ciudad-admin-men-cont {
+        margin-right: 110px;
+    }
+
+    #search-reportes-actuales {
+        margin-left: 0px;
+        width: 260px;
+    }
+
+    #filtros-reporte-list {
+        max-width: 290px;
+    }
+
+    #filtros-reporte-list > div > div {
+        width: 60px;
+    }
+
+    #cont-valor-filtros {
+        width: 260px;
+    }
+
+    #btn-atras-filtros {
+        margin-left: 50px;
+        display: inline-block;
+    }
+
+    #btn-siguiente-filtros {
+        margin-right: 30px;
+    }
+
+    #mostrar-reporte > div > p {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #mostrar-reporte2 > div > p {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #btn-guardar1 {
+        position: absolute;
+        top: 135px;
+        left:10px;
+    }
+
+    #btn-cancelar {
+        position: absolute;
+        top: 130px;
+        float: right;
+        margin-right: 0;
+    }
+
+    #text-title {
+        margin-top: 10px;
+    }
+
+    #cont1-causa1 {
+        margin-top: 90px !important;
+    }
+
+    .list-search {
+        margin-top: 20px;
+    }
+
+    #menu-trigger li {
+        width: 140px;
+    }
+
+    #menu-trigger a {
+        width: 140px;
+    }
+
+    #menu-trigger ul {
+        left: -76px;
+    }
+
+    header {
+        padding-top: 0px;
+    }
+
+    #menu-trigger {
+        top:73px;
+    }
+
+    #btn-trigger{
+        top: 25px;
+    }
+
+    .sombra-textarea2 {
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .list-search > p:first-child {
+        text-align: center;
+    }
+
+    .list-search > input{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .search {
+        width: 300px;
+    }
+
+    #btn-procesado-addenuncias {
+     margin-left: 20%;
+    }
+
+    .red-text {
+        font-size: 12px;
+    }
+
+    #mensaje-contiene-cont {
+        max-width: 150px;
+    }
+
+    #admin-mensa-list {
+        max-width: 280px;
+    }
+
+    .texto-list {
+        width: 50px;
+    }
+
+    .fecha-list {
+        width: 60px;
+    }
+
+    .share-list {
+        width: 50px;
+    }
+
+    #likes-admin-men-cont {
+        margin-right: 60px;
+    }
+
+    #pais-admin-men-cont {
+        margin-right: 60px;
+    }
+
+    #ciudad-admin-men-cont {
+        margin-right: 60px;
+    }
+
+    #admin-repor-list {
+        max-width: 290px;
+    }
+
+    #admin-repor-list > div > div {
+        width: 65px;
+    }
+
+    #reporte-list {
+        max-width: 285px;
+    }
+
+    #reporte-list > div > div {
+        width: 70px;
+    }
+
+    .droplist-campo {
+        margin-left: 0px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #btn-siguiente-mostrar-reporte {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+    }
+
+    #columnas-filtros {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .list {
+        max-width: 295px;
+    }
+
+    .reporte-list {
+        width: 70px;
+    }
+
+    #text-adetiquetas{
+        width: 90%;
+    }
+
+    .uso-etiqueta-list {
+        width: 70px;
+    }
+
+    .etiqueta-list {
+        width: 60px;
+    }
+
+    .like-list2 {
+        width: 60px;
+    }
+
+    .queja-list {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:409px) {
+    #body-landing {
+        background-attachment: scroll;
+        background-position: -322px -120px;
+    }
+
+    #logo-grrr-landing {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 25px;
+    }
+
+    #logo-grrr-landing img {
+        max-width: 200px;
+    }
+
+    #form input {
+        width: 98%;
+        padding-left: 15px;
+        font-size: 14px;
+        height: 25px;
+        box-sizing: border-box;
+    }
+
+    #form p {
+        font-size: 14px;
+    }
+
+    #reg-button {
+        width: 120px !important;
+        margin-left: -40px;
+        font-size: 13px !important;
+        float: right;
+        margin-top: 0px;
+        height: 27px !important;
+    }
+
+    #reg-buttonR {
+        width: 100px !important;
+        margin-left: -50px;
+        font-size: 13px !important;
+        margin-top: 0px;
+        float: right;
+        height: 27px !important;
+    }
+
+    #tiendas-app {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #tiendas-app a {
+        width: 129px;
+        margin-left: 5px;
+    }
+
+    footer {
+        margin-bottom: -55px;
+        height: 56px;
+    }
+
+    #cont2-causa1 > p {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    #cont1-causa1 p, #cont2-causa1 p, #cont1-causa2 p, #cont2-causa2 p, #cont1-planes1 p, #cont2-planes2 p {
+        width: 110px;
+   }
+
+    #likes-admin-men-cont {
+        margin-right: 30px;
+    }
+
+    #pais-admin-men-cont {
+        margin-right: 30px;
+    }
+
+    #ciudad-admin-men-cont {
+        margin-right: 30px;
+    }
+
+    #mensaje-contiene-cont {
+        max-width: 35%;
+    }
+
+    #datos-reporte{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 361px){
+    #consul-nube {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 358px){
+    #cont-nube-etiquetas > div > div > div > p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 350px){
+   #cont1-causa1 p, #cont2-causa1 p, #cont1-causa2 p, #cont2-causa2 p, #cont1-planes1 p, #cont2-planes2 p {
+        width: 90px;
+    }
+
+    .border-input {
+        width: 170px;
+    }
+
+    .search {
+        width: 250px;
+    }
+
+    .item-list-head {
+        font-size: 10px;
+
+    }
+
+    #mostrar-reporte > div:nth-child(3) > p {
+        margin-left: 3%;
+    }
+
+    #mensaje-contiene-cont {
+        margin-right: 10px;
+    }
+}
